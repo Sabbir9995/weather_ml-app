@@ -120,9 +120,9 @@ with tabs[2]:
 
         if st.button("🧠 Predict Weather"):
             import random
-            if humidity > 80 and min_temp < 20:
+            if humidity > 80 and min_temp < 25:
                 rainfall = 180 + (random.uniform(-25, 25))
-            elif humidity > 60 and max_temp < 35:
+            elif humidity > 60 and max_temp < 30:
                 rainfall = 80 + (random.uniform(-20, 20))
             else:
                 rainfall = 20 + (random.uniform(-5, 5))
