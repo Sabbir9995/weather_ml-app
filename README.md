@@ -4,7 +4,7 @@ This app allows users to:
 
 - 📥 Upload weather data files in Excel format
 - 📊 Visualize rainfall and wind speed distributions
-- 🔮 Predict rainfall and wind speed using a rule-based method
+- 🔮 Predict rainfall and wind speed
 - 📝 Generate a downloadable PDF report based on the latest prediction
 
 ## 📁 Files
@@ -22,7 +22,7 @@ streamlit run weather_app_dynamic_report.py
 
 ## 🧠 Features
 
-- Rule-based weather prediction based on user inputs
+- Weather prediction based on user inputs
 - Generates PDF report with inputs and predicted outputs
 - Clean and interactive UI built with Streamlit
 
@@ -33,5 +33,3 @@ streamlit run weather_app_dynamic_report.py
 - Columns expected: SL, Station, Year, Month, Value
 
 ---
-
-© 2025 Weather Forecasting App
