@@ -140,13 +140,13 @@ with tabs[2]:
             st.session_state.prediction_result = {
                 "Year": year,
                 "Month": month,
-                "Humidity": humidity,
-                "MaxTemp": max_temp,
-                "MinTemp": min_temp,
-                "Sunshine": sunshine,
-                "CloudCoverage": cloud_coverage,
-                "Rainfall": rainfall,
-                "WindSpeed": wind_speed
+                "Humidity": humidity %,
+                "MaxTemp": max_temp °C,
+                "MinTemp": min_temp °,
+                "Sunshine": sunshine hours,
+                "CloudCoverage": cloud_coverage octas,
+                "Rainfall": rainfall mm,
+                "WindSpeed": wind_speed m/s
             }
     else:
         st.warning("⚠️ Please upload and process data first.")
@@ -160,7 +160,7 @@ with tabs[3]:
 
         pdf = FPDF()
         pdf.add_page()
-        pdf.set_font("Arial", size=12)
+        pdf.set_font("Arial", size=20)
         pdf.cell(200, 10, txt="Predicted Weather Report", ln=True, align='C')
         pdf.ln(10)
 
