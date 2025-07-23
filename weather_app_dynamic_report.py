@@ -143,7 +143,7 @@ with tabs[2]:
                 "Humidity": humidity,
                 "MaxTemp": max_temp,
                 "MinTemp": min_temp,
-                "Sunshine": "sunshine,
+                "Sunshine": sunshine,
                 "CloudCoverage": cloud_coverage,
                 "Rainfall": rainfall,
                 "WindSpeed": wind_speed
