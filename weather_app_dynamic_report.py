@@ -166,7 +166,8 @@ with tabs[3]:
 
     if "prediction_result" in st.session_state:
         data = st.session_state.prediction_result
-        unit = st.session_state.prediction_units
+    if "prediction_units" in st.session_state:
+        data = st.session_state.prediction_units
 
         pdf = FPDF()
         pdf.add_page()
