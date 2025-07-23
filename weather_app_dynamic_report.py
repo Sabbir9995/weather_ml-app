@@ -165,9 +165,9 @@ with tabs[3]:
     st.header("📝 Report Generation")
 
     if "prediction_result" in st.session_state:
-        data = st.session_state.prediction_result
+        data = st.session_state.prediction_result,
     if "prediction_units" in st.session_state:
-        unit = st.session_state.prediction_units
+        data = st.session_state.prediction_units
 
         pdf = FPDF()
         pdf.add_page()
