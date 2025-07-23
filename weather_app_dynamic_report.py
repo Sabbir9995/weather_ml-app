@@ -164,9 +164,10 @@ with tabs[2]:
 with tabs[3]:
     st.header("📝 Report Generation")
 
-    if "prediction_result" not in st.session_state:
+    if "prediction_result" in st.session_state:
         data = st.session_state.prediction_result
-    if  "prediction_units" not in st.session_state: # This 'if' block controls the PDF generation
+        # This 'if' block controls the PDF generation
+    if  "prediction_units" in st.session_state: 
         unit = st.session_state.prediction_units
 
         pdf = FPDF()
