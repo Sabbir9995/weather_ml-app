@@ -147,16 +147,7 @@ with tabs[2]:
                 "CloudCoverage": cloud_coverage,
                 "Rainfall": rainfall,
                 "WindSpeed": wind_speed
-            }
-            st.session_state.prediction_units = {
-                "Humidity": "%",
-                "MaxTemp": "°C",
-                "MinTemp": "°C",
-                "Sunshine": "hours",
-                "CloudCoverage": "octas",
-                "Rainfall": "mm",
-                "WindSpeed": "m/s"
-            }
+            
     else:
         st.warning("⚠️ Please upload and process data first.")
 
@@ -166,10 +157,7 @@ with tabs[3]:
 
     if "prediction_result" in st.session_state:
         data = st.session_state.prediction_result
-        # This 'if' block controls the PDF generation
-    if  "prediction_units" in st.session_state: 
-        unit = st.session_state.prediction_units
-
+        
         pdf = FPDF()
         pdf.add_page()
         pdf.set_font("Arial", size=20)
