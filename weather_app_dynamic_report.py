@@ -142,7 +142,7 @@ with tabs[2]:
                 "Month": month,
                 "Humidity": humidity %,
                 "MaxTemp": max_temp °C,
-                "MinTemp": min_temp °,
+                "MinTemp": min_temp °C,
                 "Sunshine": sunshine hours,
                 "CloudCoverage": cloud_coverage octas,
                 "Rainfall": rainfall mm,
