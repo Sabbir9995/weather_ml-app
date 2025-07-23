@@ -140,13 +140,22 @@ with tabs[2]:
             st.session_state.prediction_result = {
                 "Year": year,
                 "Month": month,
-                "Humidity": "humidity" in %,
-                "MaxTemp": "max_temp" in °C,
-                "MinTemp": "min_temp" in °C,
-                "Sunshine": "sunshine" in hours,
-                "CloudCoverage": "cloud_coverage" in octas,
-                "Rainfall": "rainfall" in mm,
-                "WindSpeed": "wind_speed" in m/s
+                "Humidity": humidity,
+                "MaxTemp": max_temp,
+                "MinTemp": min_temp,
+                "Sunshine": "sunshine,
+                "CloudCoverage": cloud_coverage,
+                "Rainfall": rainfall,
+                "WindSpeed": wind_speed
+            }
+            st.session_state.prediction_units = {
+                "Humidity": "%",
+                "MaxTemp": "°C",
+                "MinTemp": "°C",
+                "Sunshine": "hours",
+                "CloudCoverage": "octas",
+                "Rainfall": "mm",
+                "WindSpeed": "m/s"
             }
     else:
         st.warning("⚠️ Please upload and process data first.")
