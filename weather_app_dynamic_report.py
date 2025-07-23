@@ -116,7 +116,7 @@ with tabs[2]:
         min_temp = col5.number_input("Min Temperature (°C)", min_value=0.0, max_value=40.0, step=0.1)
         sunshine = col6.number_input("Sunshine (hours)", min_value=0.0, max_value=15.0, step=0.1)
 
-        cloud_coverage = st.number_input("Cloud Coverage (oktas)", min_value=0.0, max_value=100.0, step=0.1)
+        cloud_coverage = st.number_input("Cloud Coverage (octas)", min_value=0.0, max_value=100.0, step=0.1)
 
         if st.button("🧠 Predict Weather"):
             import random
@@ -166,6 +166,7 @@ with tabs[3]:
 
     if "prediction_result" in st.session_state:
         data = st.session_state.prediction_result
+        data = st.session_state.prediction_units
 
         pdf = FPDF()
         pdf.add_page()
