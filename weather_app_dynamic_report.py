@@ -147,6 +147,7 @@ with tabs[2]:
                 "CloudCoverage": cloud_coverage,
                 "Rainfall": rainfall,
                 "WindSpeed": wind_speed
+            }
             
     else:
         st.warning("⚠️ Please upload and process data first.")
