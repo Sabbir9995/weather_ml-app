@@ -54,7 +54,7 @@ with tabs[0]:
                                                     bins=[-float('inf'), 1.5, 3.5, float('inf')],
                                                     labels=["Calm", "Moderate", "Windy"])
 
-            st.subheader("Merged Weather Data")
+            st.subheader("Merged Weather Data (merge all row)")
             st.dataframe(merged_df.head())
 
             st.session_state.weather_data = merged_df
